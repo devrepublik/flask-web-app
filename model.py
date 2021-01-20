@@ -1,6 +1,4 @@
 # Importing the libraries
-import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
 
@@ -29,6 +27,7 @@ print(f"R^2-score: {r2_score(y, y_pred)*100:.2f}%")
 
 # Saving model to disk
 pickle.dump(regressor, open('model.pkl','wb'))
+
 
 '''
 # Loading model to compare the results
