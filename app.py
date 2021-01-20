@@ -17,7 +17,7 @@ def home():
 
 
 @app.route('/predict',methods=['POST'])
-def from_predict():
+def predict():
     '''
     For rendering results on HTML GUI
     '''
