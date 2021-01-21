@@ -19,6 +19,7 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
     '''
+    extracting features from Web-form (request.form)
     For rendering results on HTML GUI
     '''
     
@@ -32,6 +33,8 @@ def predict():
 @app.route('/api/v1/predict',methods=['GET'])
 def api_predict():
     """
+    extracting features from request.args
+
     OK:
         http://127.0.0.1:5000//api/v1/predict?experience=5&interview_score=8&test_score=6
     ERROR:        
